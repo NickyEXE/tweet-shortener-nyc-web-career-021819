@@ -35,14 +35,18 @@ def bulk_tweet_shortener(array)
 end
 
 def selective_tweet_shortener(tweet)
-  twerray = tweet.split(" ")
-  dictionarystring = dictionary.keys.map {|key| key.to_s}
-  twerray = twerray.map do |word|
-    if dictionarystring.include?(word.downcase)
-      dictionary[word.downcase.to_sym]
-    else
-      word
+  if tweet <130
+    puts tweet
+  else
+    twerray = tweet.split(" ")
+    dictionarystring = dictionary.keys.map {|key| key.to_s}
+    twerray = twerray.map do |word|
+      if dictionarystring.include?(word.downcase)
+        dictionary[word.downcase.to_sym]
+      else
+        word
+      end
     end
+    twerray.join(" ")
   end
-  twerray.join(" ")
 end
