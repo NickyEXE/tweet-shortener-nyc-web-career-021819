@@ -17,4 +17,5 @@ def word_substituter(tweet)
   dictionarystring = dictionary.keys.map {|key| key.to_s}
   twerray.map do |word|
     if dictionarystring.include?(word)
+      dictionary[word.to_sym]
 end
