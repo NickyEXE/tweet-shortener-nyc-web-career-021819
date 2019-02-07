@@ -38,7 +38,7 @@ end
 def selective_tweet_shortener(tweet)
   binding.pry
   if tweet.size < 130
-    puts tweet
+    tweet
   else
     twerray = tweet.split(" ")
     dictionarystring = dictionary.keys.map {|key| key.to_s}
