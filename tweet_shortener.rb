@@ -34,12 +34,15 @@ def bulk_tweet_shortener(array)
   end
 end
 
-def selective_tweet_shortener(array)
-  array.map do |tweet|
-    if string >= 130
-      puts word_substituter(tweet)
+def selective_tweet_shortener(tweet)
+  twerray = tweet.split(" ")
+  dictionarystring = dictionary.keys.map {|key| key.to_s}
+  twerray = twerray.map do |word|
+    if dictionarystring.include?(word.downcase)
+      dictionary[word.downcase.to_sym]
     else
-      puts tweet
+      word
     end
   end
+  twerray.join(" ")
 end
