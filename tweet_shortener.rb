@@ -19,7 +19,7 @@ def word_substituter(tweet)
   dictionarystring = dictionary.keys.map {|key| key.to_s}
   twerray = twerray.map do |word|
     if dictionarystring.include?(word.downcase)
-      dictionary[word.to_sym]
+      dictionary[word.downcase.to_sym]
     else
       word
     end
