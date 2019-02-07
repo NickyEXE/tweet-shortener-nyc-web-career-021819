@@ -12,7 +12,7 @@ at: "@",
 and: "&"
 }
 
-def word_substituter(tweet,dictionary)
+def word_substituter(tweet,dictionary = dictionary)
   twerray = tweet.split(" ")
   dictionarystring = dictionary.keys.map {|key| key.to_s}
   twerray = twerray.map do |word|
