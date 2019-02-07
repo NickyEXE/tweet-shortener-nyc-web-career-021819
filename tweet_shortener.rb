@@ -15,7 +15,7 @@ and: "&"
 def word_substituter(tweet)
   twerray = tweet.split(" ")
   dictionarystring = dictionary.keys.map {|key| key.to_s}
-  twerray.map do |word|
+  twerray = twerray.map do |word|
     if dictionarystring.include?(word)
       dictionary[word.to_sym]
     else
