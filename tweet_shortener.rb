@@ -13,5 +13,8 @@ and: "&"
 }
 
 def word_substituter(tweet)
-  tweet.split(" ")
+  twerray = tweet.split(" ")
+  dictionarystring = dictionary.keys.map {|key| key.to_s}
+  twerray.map do |word|
+    if
 end
