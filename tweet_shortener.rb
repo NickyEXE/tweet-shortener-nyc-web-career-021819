@@ -46,7 +46,7 @@ def selective_tweet_shortener(tweet)
       else
         word
       end
+    end
     twerray.join(" ")
-  end
   end
 end
