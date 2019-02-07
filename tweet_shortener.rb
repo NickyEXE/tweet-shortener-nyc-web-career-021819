@@ -20,4 +20,6 @@ def word_substituter(tweet)
       dictionary[word.to_sym]
     else
       word
+    end
+  end
 end
