@@ -18,4 +18,6 @@ def word_substituter(tweet)
   twerray.map do |word|
     if dictionarystring.include?(word)
       dictionary[word.to_sym]
+    else
+      word
 end
