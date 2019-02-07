@@ -38,3 +38,6 @@ def selective_tweet_shortener(array)
   array.map do |tweet|
     if string >= 130
       puts word_substituter(tweet)
+    else
+      puts tweet
+    end
