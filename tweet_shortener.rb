@@ -13,10 +13,11 @@ at: "@",
 and: "&"
 }
 end
+
 def word_substituter(tweet)
   twerray = tweet.split(" ")
   wordsfixer = dictionary
-  dictionarystring = wordsfixer.keys.map {|key| key.to_s}
+  dictionarystring = dictionary.keys.map {|key| key.to_s}
   twerray = twerray.map do |word|
     if dictionarystring.include?(word)
       dictionary[word.to_sym]
