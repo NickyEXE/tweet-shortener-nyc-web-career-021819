@@ -59,3 +59,4 @@ def shortened_tweet_truncator(tweet)
   else
     shortened.tweet
   end
+end
