@@ -1,4 +1,5 @@
 # Write your code here.
+require 'pry'
 def dictionary
 dictionary = {
 hello: 'hi',
@@ -35,7 +36,8 @@ def bulk_tweet_shortener(array)
 end
 
 def selective_tweet_shortener(tweet)
-  if tweet.to_s.length < 130
+
+  if tweet.length < 130
     puts tweet
   else
     twerray = tweet.split(" ")
