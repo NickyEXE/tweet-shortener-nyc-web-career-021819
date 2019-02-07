@@ -1,5 +1,5 @@
 # Write your code here.
-dictionary = {
+def dictionary = {
 hello: 'hi',
 to: '2',
 two: '2',
@@ -12,7 +12,7 @@ at: "@",
 and: "&"
 }
 
-def word_substituter(tweet, dictionary)
+def word_substituter(tweet)
   twerray = tweet.split(" ")
   dictionarystring = dictionary.keys.map {|key| key.to_s}
   twerray = twerray.map do |word|
