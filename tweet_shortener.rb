@@ -16,7 +16,6 @@ end
 
 def word_substituter(tweet)
   twerray = tweet.split(" ")
-  wordsfixer = dictionary
   dictionarystring = dictionary.keys.map {|key| key.to_s}
   twerray = twerray.map do |word|
     if dictionarystring.include?(word)
