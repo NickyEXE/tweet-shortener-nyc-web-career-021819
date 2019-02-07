@@ -37,7 +37,7 @@ end
 
 def selective_tweet_shortener(tweet)
   binding.pry
-  if tweet.length < 130
+  if tweet.size < 130
     puts tweet
   else
     twerray = tweet.split(" ")
