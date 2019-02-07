@@ -11,3 +11,5 @@ you: 'u',
 at: "@",
 and: "&"
 }
+
+puts(dictionary)
