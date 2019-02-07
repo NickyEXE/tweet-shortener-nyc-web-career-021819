@@ -12,7 +12,7 @@ you: 'u',
 at: "@",
 and: "&"
 }
-
+end
 def word_substituter(tweet)
   twerray = tweet.split(" ")
   wordsfixer = dictionary
