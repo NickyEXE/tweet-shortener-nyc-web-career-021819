@@ -57,3 +57,4 @@ def shortened_tweet_truncator(tweet)
   if shortened.tweet > 140
     "#{shortened_tweet[0..139]}..."
   else
+    shortened.tweet
