@@ -35,7 +35,7 @@ def bulk_tweet_shortener(array)
 end
 
 def selective_tweet_shortener(tweet)
-  if tweet <130
+  if tweet < 130
     puts tweet
   else
     twerray = tweet.split(" ")
@@ -46,7 +46,7 @@ def selective_tweet_shortener(tweet)
       else
         word
       end
-    end
     twerray.join(" ")
+  end
   end
 end
