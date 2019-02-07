@@ -16,5 +16,5 @@ def word_substituter(tweet)
   twerray = tweet.split(" ")
   dictionarystring = dictionary.keys.map {|key| key.to_s}
   twerray.map do |word|
-    if
+    if dictionarystring.include?(word)
 end
