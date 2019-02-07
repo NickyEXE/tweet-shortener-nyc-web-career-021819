@@ -12,4 +12,6 @@ at: "@",
 and: "&"
 }
 
-puts(dictionary)
+def word_substituter(tweet)
+  tweet.split(" ")
+end
