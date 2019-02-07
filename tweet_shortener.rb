@@ -51,3 +51,6 @@ def selective_tweet_shortener(tweet)
     twerray.join(" ")
   end
 end
+
+def shortened_tweet_truncator(tweet)
+  shortened_tweet = selective_tweet_shortener(tweet)
